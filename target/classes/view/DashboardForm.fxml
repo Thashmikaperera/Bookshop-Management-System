@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1375.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.bookshop.controllers.DashboardFormController">
+   <children>
+      <AnchorPane layoutY="-2.0" prefHeight="682.0" prefWidth="321.0" stylesheets="@../assert/style/DashBoardStyle.css">
+         <children>
+            <ImageView fitHeight="708.0" fitWidth="319.0" layoutX="1.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assert/img/content.jpg" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnDashboard" layoutX="4.0" layoutY="202.0" onAction="#DashBoardOnAction" prefHeight="54.0" prefWidth="285.0" text="Dashboard" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assert/img/icons8-dashboard-layout-48.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnCustomer" layoutX="-2.0" layoutY="257.0" onAction="#btnCustomerOnAction" prefHeight="54.0" prefWidth="285.0" text="Customer" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assert/img/icons8-customer-48.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnItem" layoutX="-26.0" layoutY="367.0" onAction="#ItemFormOnAction" prefHeight="54.0" prefWidth="285.0" text="Item" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assert/img/icons8-open-box-48.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnEmployee" layoutX="-1.0" layoutY="311.0" onAction="#EmployeeFormOnAction" prefHeight="54.0" prefWidth="285.0" text="Employee" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assert/img/icons8-staff-48.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="BtnSupplier" layoutX="-13.0" layoutY="427.0" onAction="#SupplierFormOnAction" prefHeight="54.0" prefWidth="285.0" text="Supplier" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assert/img/icons8-supplier-48.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnOrder" layoutX="-21.0" layoutY="490.0" onAction="#OrderFormOnAction" prefHeight="54.0" prefWidth="285.0" text="Order" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assert/img/icons8-shopping-cart-48.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="BtnVehicle" layoutX="-11.0" layoutY="548.0" onAction="#vehicleFormOnAction" prefHeight="54.0" prefWidth="285.0" text="Vehical" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assert/img/icons8-lorry-78.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnDriver" layoutX="-20.0" layoutY="602.0" onAction="#DriverFormOnAction" prefHeight="54.0" prefWidth="285.0" text="Driver" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assert/img/icons8-driver-60.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="50.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assert/img/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="dashboardPane" layoutX="321.0" layoutY="-1.0" prefHeight="707.0" prefWidth="1054.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,9 @@
+#dashboardPane{
+    /*-fx-border-radius: 50;*/
+    /*-fx-border-color: #148B6F;*/
+    -fx-background-color: #ffff;
+    /*-fx-background-radius: 50;*/
+}
+.div {
+    -fx-background-color: linear-gradient(to bottom right, #3399ff 0%, #000000 99%);
+}

@@ -1,0 +1,123 @@
+.text-field {
+    -fx-prompt-text-fill: rgba(0, 0, 0, 0.46);
+}
+#btnSave {
+    -fx-effect: dropshadow(three-pass-box, grey, 20, 0.1, 0, 0);
+    -fx-background-color: linear-gradient(from 82% 90% to 90% 90%, #fafafa, #78ebfc);
+}
+
+#btnSave:hover {
+    -fx-background-color: linear-gradient(from 82% 90% to 90% 90%, #fafafa, #11d7f3);
+}
+
+#btnSave:pressed {
+    -fx-background-color: linear-gradient(from 82% 90% to 90% 90%, #fafafa, #027081);
+}
+
+#btnDelete {
+    -fx-effect: dropshadow(three-pass-box, grey, 20, 0.1, 0, 0);
+    -fx-background-color: linear-gradient(from 82% 90% to 90% 90%, #ffffff, #f88f8f);
+}
+
+#btnDelete:hover {
+    -fx-background-color: linear-gradient(from 82% 90% to 90% 90%, #ffffff, #ec1717);
+}
+
+#btnDelete:pressed {
+    -fx-background-color: linear-gradient(from 82% 90% to 90% 90%, #ffffff, #9f0000);
+}
+
+#btnUpdate {
+    -fx-effect: dropshadow(three-pass-box, grey, 20, 0.1, 0, 0);
+    -fx-background-color: linear-gradient(from 82% 90% to 90% 90%, #fafafa, #89efb1);
+}
+
+#btnUpdate:hover {
+    -fx-background-color: linear-gradient(from 82% 90% to 90% 90%, #fafafa, #09f666);
+}
+
+#btnUpdate:pressed {
+    -fx-background-color: linear-gradient(from 82% 90% to 90% 90%, #fafafa, #02913c);
+}
+.table-view{
+    -fx-background-color: rgba(0, 0, 0, 0.24);
+    -fx-border-radius: 2;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+}
+
+.table-view:focused{
+    -fx-background-color: rgba(0, 0, 0, 0.24);
+}
+
+/* Spaltenköpfe
+    Struktur column-header-background -> column-header */
+
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(#131313 0%, #424141 100%);
+
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell{
+    -fx-text-fill: white;
+}
+
+.table-row-cell{
+    -fx-background-color: -fx-table-cell-border-color, #616161;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.table-row-cell:odd{
+    -fx-background-color: -fx-table-cell-border-color, #424242;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #005797;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+
+.table-view > .virtual-flow > .scroll-bar:vertical,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track-background,
+.table-view > .virtual-flow > .scroll-bar:horizontal,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track-background {
+    -fx-background-color: transparent;
+}
+
+
+
+.table-view > .virtual-flow > .scroll-bar > .increment-button,
+.table-view > .virtual-flow > .scroll-bar > .decrement-button {
+    -fx-opacity: 0;
+}
+#ancTextBackground{
+    -fx-background-color: rgba(255, 255, 255, 0.58);
+    -fx-background-radius: 20px;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-border-radius: 20px;
+    -fx-effect: dropshadow(three-pass-box, grey, 20, 0.1, 0, 0);
+}
+
+#lblMain{
+
+    -fx-effect: dropshadow( one-pass-box , black , 8 , 0.0 , 2 , 0 )
+}
+#mainAnc{
+    -fx-background-color: #363062;
+}

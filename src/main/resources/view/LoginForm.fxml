@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="700.0" prefWidth="1300.0" stylesheets="@../assert/style/LoginFormStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.bookshop.controllers.LoginFormController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1300.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assert/img/loginForm.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.21" />
+         </effect>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0b1117bf" height="426.0" layoutX="222.0" layoutY="138.0" stroke="BLACK" strokeType="INSIDE" width="848.0" />
+      <Label layoutX="522.0" layoutY="43.0" prefHeight="66.0" prefWidth="266.0" text="WELCOME " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+      </Label>
+      <Label layoutX="268.0" layoutY="168.0" text="Sign In" textFill="#e8dedef7">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Separator layoutX="637.0" layoutY="211.0" orientation="VERTICAL" prefHeight="320.0" prefWidth="6.0" />
+      <CheckBox fx:id="ckbRemberMe" layoutX="284.0" layoutY="364.0" mnemonicParsing="false" text="Remeber Me" textFill="#f2ebeb">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="btnSignin" layoutX="285.0" layoutY="404.0" mnemonicParsing="false" onAction="#SigninOnAction" prefHeight="44.0" prefWidth="145.0" text="Sign In">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblforgetPassword" layoutX="289.0" layoutY="467.0" onMouseClicked="#hintOnmouseClicked" text="Forgot Password ?" textFill="#ddcdcd">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="684.0" layoutY="173.0" text="Sign Up" textFill="#e8dedef7">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSignUp" layoutX="708.0" layoutY="469.0" mnemonicParsing="false" onAction="#SignUpOnAction" prefHeight="44.0" prefWidth="145.0" text="Sign Up">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="224.0" layoutY="618.0" text="Copyright © 2022 Thashmika Madushani. All Rights Reserved.This project is licensed under the MIT license.">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtUserName1" focusColor="#e30b10" layoutX="284.0" layoutY="240.0" prefHeight="45.0" prefWidth="247.0" promptText="User Name" unFocusColor="#f5eeee" />
+      <JFXTextField fx:id="txtUserName" focusColor="#e30b10" layoutX="705.0" layoutY="282.0" prefHeight="45.0" prefWidth="247.0" promptText=" User Name" unFocusColor="#f5eeee" />
+      <JFXTextField fx:id="txtpassword" focusColor="#e30b10" layoutX="706.0" layoutY="331.0" prefHeight="45.0" prefWidth="247.0" promptText="Password" unFocusColor="#f5eeee" />
+      <JFXTextField fx:id="txtHint" focusColor="#e30b10" layoutX="707.0" layoutY="384.0" prefHeight="45.0" prefWidth="247.0" promptText="Hint" unFocusColor="#f5eeee" />
+      <JFXTextField fx:id="txtName" focusColor="#e30b10" layoutX="708.0" layoutY="237.0" prefHeight="45.0" prefWidth="247.0" promptText="Name" unFocusColor="#f5eeee" />
+      <JFXPasswordField fx:id="txtUserPassword" focusColor="#e30b10" layoutX="284.0" layoutY="295.0" prefHeight="45.0" prefWidth="247.0" promptText="Pass Word" unFocusColor="#f5eeee" />
+      <JFXTextField fx:id="txtpassowrd" focusColor="#e30b10" layoutX="284.0" layoutY="295.0" prefHeight="45.0" prefWidth="247.0" unFocusColor="#f5eeee" />
+      <Label fx:id="lblHint" layoutX="415.0" layoutY="465.0" prefHeight="21.0" prefWidth="109.0" textFill="#ddcdcd">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgShow" fitHeight="30.0" fitWidth="30.0" layoutX="494.0" layoutY="304.0" onMouseClicked="#ShowPasswordOnMouseClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/img/icons8-eye-100%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imghide" fitHeight="30.0" fitWidth="30.0" layoutX="494.0" layoutY="304.0" onMouseClicked="#HidePasswordOnMouseClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/img/icons8-hide-100%20(1).png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
